@@ -1,0 +1,55 @@
+.header {
+  display: inline-flex;
+  flex-direction: row;
+  background: #000;
+  width: 100%; 
+  justify-content: center;
+  /* align-items: center; */
+}
+.header_box{
+    width: 90%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.headerIcon {
+  display: inline-flex;
+  height: 60px; 
+  align-items: center; 
+}
+.headerIcon img {
+    width: 40px;
+    /* height: 50px; */
+}
+.headerIcon span {
+    font-size: 20px;
+    color: #61dafb;
+}
+.catelog{
+    display: inline-flex;
+    color: #fff;
+    margin-left: -300px;
+    align-items: center;
+}
+.catelog li{
+    padding: 0 16px;
+    font-weight: 100;
+    font-size: 17px;
+}
+.catelog li.selected{
+    padding: 0 12px;
+    border-bottom: 4px solid #61dafb;
+}
+.searchBar{
+    align-items: center;
+    display: inline-flex;
+}
+.searchBar img{
+    width: 16px;
+}
+.searchBar input{
+    background: none;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    color: #fff;
+}

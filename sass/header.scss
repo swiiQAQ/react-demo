@@ -1,0 +1,21 @@
+.header{
+    display: inline-flex;
+    flex-direction: row;
+    background: #000;
+    width: 100%;
+}
+.headerIcon{
+    display: inline-flex;
+    height: 60px;
+    img{
+        width: 50px;
+        height: 50px;
+        flex-direction: center;
+    }
+    span{
+        font-size: 20px;
+        color: #61dafb;
+        flex-direction: center;
+    }
+}
+
