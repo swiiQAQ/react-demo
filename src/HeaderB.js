@@ -7,12 +7,10 @@ class HeaderB extends React.Component{
     render(){
         const content = ['Docs','Tutorial','Community','Blog'];
         return(
-            <div class="header">
-                <div class="headerBox">
+            <div className="header">
+                <div className="header_box">
                     <HeaderIcon src={this.props.src} text={this.props.text}/>
-                    <ul>
-                        <Catelog content={content}/>
-                    </ul>
+                    <Catelog content={content}/>
                 </div>
             </div>
         )

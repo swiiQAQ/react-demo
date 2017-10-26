@@ -5,11 +5,12 @@ import './header.css';
 import Timer from './timer';
 import search from './search.svg';
 import HeaderB from './HeaderB.js';
+import Clock from './Clock.js';
 
 let catelog=['Docs','Tutorial','Community','Blog'];
 function HeaderIcon(props) {
   return (
-    <div class='headerIcon'>
+    <div className='headerIcon'>
       <img src={props.src} />
       <span>{props.text}</span>
     </div>
@@ -23,13 +24,13 @@ function CatelogItems(props){
       ) 
     })
     return (
-      <ul class="catelog">{list}</ul>
+      <ul className="catelog">{list}</ul>
     )
 }
 
 function SearchBar(props){
   return (
-    <div class="searchBar">
+    <div className="searchBar">
       <img src={props.src} />
       <input type="text"  placeholder={props.defaultContent}/>
     </div>
@@ -37,8 +38,8 @@ function SearchBar(props){
 }
 function Header(props) {
   return (
-    <div class='header'>
-      <div class="header_box">
+    <div className='header'>
+      <div className="header_box">
         <HeaderIcon src={props.src} text={props.text} />
         <CatelogItems content={catelog} />
         <SearchBar src={search} defaultContent="Search docs"/>
@@ -59,6 +60,7 @@ class App extends Component {
         {/* <Timer />  */}
         <Header src={logo} text="React" />
         <HeaderB src={logo} text="React" />
+        <Clock />
       </div>
     );
   }
