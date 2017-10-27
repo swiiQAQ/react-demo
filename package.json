@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build-css": "node-sass sass/ -o src/ --watch",
-    "start": "react-scripts start",
+    "start": "react-scripts start && set port=8008 & roadhog server ",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

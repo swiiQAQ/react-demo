@@ -6,6 +6,7 @@ import Timer from './timer';
 import search from './search.svg';
 import HeaderB from './HeaderB.js';
 import Clock from './Clock.js';
+import SwitchBtn from './SwitchBtn.js'
 
 let catelog=['Docs','Tutorial','Community','Blog'];
 function HeaderIcon(props) {
@@ -61,6 +62,7 @@ class App extends Component {
         <Header src={logo} text="React" />
         <HeaderB src={logo} text="React" />
         <Clock />
+        <SwitchBtn />
       </div>
     );
   }
