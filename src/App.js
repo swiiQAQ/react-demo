@@ -6,7 +6,8 @@ import Timer from './timer';
 import search from './search.svg';
 import HeaderB from './HeaderB.js';
 import Clock from './Clock.js';
-import SwitchBtn from './SwitchBtn.js'
+import SwitchBtn from './SwitchBtn.js';
+import Form from './Form.js';
 
 let catelog=['Docs','Tutorial','Community','Blog'];
 function HeaderIcon(props) {
@@ -21,7 +22,7 @@ function HeaderIcon(props) {
 function CatelogItems(props){
     let list = props.content.map(function(item){
       return (
-        <li>{item}</li>
+        <li key={item.toString()}>{item}</li>
       ) 
     })
     return (
@@ -63,6 +64,7 @@ class App extends Component {
         <HeaderB src={logo} text="React" />
         <Clock />
         <SwitchBtn />
+        <Form />
       </div>
     );
   }
