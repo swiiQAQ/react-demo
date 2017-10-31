@@ -53,7 +53,7 @@ class Clock extends React.Component {
     }
     render() {
         return (
-            <div className="clockBox">
+            <div className="clockBox example">
                 <h2>{this.state.date}</h2>
                 <input type="button" value={this.state.isChange ? 'date' : 'time'} onClick={this.changeTimer} />
 

@@ -10,15 +10,34 @@ class SwitchBtn extends React.Component{
         this.setState(prevState=>({
             isToggleOn: !prevState.isToggleOn
         }))
+        
         // this.setState({
         //     isToggleOn: !this.state.isToggleOn
         // })
     }
     render(){
+        let styleObj;
+        if(this.state.isToggleOn){
+            styleObj = {
+                marginLeft: '',
+            }
+        }
+        else{
+            styleObj ={
+                // marginRight: '20px',
+                background: '#E74C3C'
+            }
+        }
         return (
-            <button onClick={this.handleClick}>
-                {this.state.isToggleOn? 'ON':'OFF'}
-            </button>
+            <div className="example">
+                <div class="switchBox">
+                    <button style={styleObj} className="switchBtn" onClick={this.handleClick}>
+                        {this.state.isToggleOn? 'ON':'OFF'}
+                    </button>                    
+                </div>
+
+            </div>
+            
         )
     }
 }

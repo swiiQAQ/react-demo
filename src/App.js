@@ -8,6 +8,7 @@ import HeaderB from './HeaderB.js';
 import Clock from './Clock.js';
 import SwitchBtn from './SwitchBtn.js';
 import Form from './Form.js';
+import TemperatureSync from './TemperatureSync.js';
 
 let catelog=['Docs','Tutorial','Community','Blog'];
 function HeaderIcon(props) {
@@ -65,6 +66,7 @@ class App extends Component {
         <Clock />
         <SwitchBtn />
         <Form />
+        <TemperatureSync/>
       </div>
     );
   }

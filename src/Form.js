@@ -5,7 +5,7 @@ import FruitSelect from './FruitSelect.js';
 class Form extends React.Component{
     render(){
         return(
-            <div>
+            <div class="example">
                 <NameForm />
                 <FruitSelect />
             </div>
